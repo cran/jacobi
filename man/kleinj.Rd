@@ -2,20 +2,35 @@
 % Please edit documentation in R/klein-j.R
 \name{kleinj}
 \alias{kleinj}
-\title{Klein j-function}
+\alias{kleinjinv}
+\title{Klein j-function and its inverse}
 \usage{
-kleinj(tau)
+kleinj(tau, transfo = FALSE)
+
+kleinjinv(j)
 }
 \arguments{
-\item{tau}{a complex number with strictly positive imaginary part}
+\item{tau}{a complex number with strictly positive imaginary part, or a 
+vector or matrix of such complex numbers; missing values allowed}
+
+\item{transfo}{Boolean, whether to use a transformation of the values
+of \code{tau} close to the real line; using this option can fix some 
+failures of the computation (at the cost of speed), e.g. when the 
+algorithm reaches the maximal number of iterations}
+
+\item{j}{a complex number}
 }
 \value{
-A complex number.
+A complex number, vector or matrix.
 }
 \description{
-Evaluation of the Klein j-invariant function.
+Evaluation of the Klein j-invariant function and its inverse.
+}
+\note{
+The Klein-j function is the one with the factor 1728.
 }
 \examples{
-kleinj(2i)
+( j <- kleinj(2i) )
 66^3
+kleinjinv(j)
 }

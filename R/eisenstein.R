@@ -1,5 +1,15 @@
+#' @importFrom Carlson elliptic_E
+#' @noRd
+E2 <- function(tau){
+  q3 <- jtheta3_cpp(0, tau)^2
+  6/pi * elliptic_E(pi/2, lambda(tau), minerror = 100 * .Machine$double.eps) * 
+    q3 - q3^2 - jtheta4_cpp(0, tau)^4
+}
+
 E4 <- function(tau){
-  (jtheta2_cpp(0, tau)^8 + jtheta3_cpp(0, tau)^8 + jtheta4_cpp(0, tau)^8) / 2
+  (exp(8*ljtheta2_cpp(0, tau)) + 
+     exp(8*ljtheta3_cpp(0, tau)) + 
+     exp(8*ljtheta4_cpp(0, tau))) / 2
 }
 
 E6 <- function(tau){
@@ -16,9 +26,9 @@ E6 <- function(tau){
 #'
 #' @return A complex number, the value of the Eisenstein series.
 #' @export
-En <- function(n, q){
+EisensteinE <- function(n, q){
   stopifnot(n %in% c(2, 4, 6))
-  stopifnot(isComplex(q))
+  stopifnot(isComplexNumber(q))
   if(Mod(q) >= 1){
     stop("The modulus of `q` must be strictly less than one.")
   }

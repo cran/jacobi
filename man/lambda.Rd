@@ -4,13 +4,19 @@
 \alias{lambda}
 \title{Lambda modular function}
 \usage{
-lambda(tau)
+lambda(tau, transfo = FALSE)
 }
 \arguments{
-\item{tau}{a complex number with strictly positive imaginary part}
+\item{tau}{a complex number with strictly positive imaginary part, or 
+a vector or matrix of such complex numbers; missing values allowed}
+
+\item{transfo}{Boolean, whether to use a transformation of the values
+of \code{tau} close to the real line; using this option can fix some 
+failures of the computation (at the cost of speed), e.g. when the 
+algorithm reaches the maximal number of iterations}
 }
 \value{
-A complex number.
+A complex number, vector or matrix.
 }
 \description{
 Evaluation of the lambda modular function.
@@ -19,6 +25,6 @@ Evaluation of the lambda modular function.
 The lambda function is the square of the elliptic modulus.
 }
 \examples{
-eta(2i)
-gamma(1/4) / 2^(11/8) / pi^(3/4)
+x <- 2
+lambda(1i*sqrt(x)) + lambda(1i*sqrt(1/x)) # should be one
 }
