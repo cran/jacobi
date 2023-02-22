@@ -2,16 +2,29 @@ G4 <- function(tau){
   pi^4/45 * E4(tau)
 }
 
-halfPeriods <- function(g){
+G6 <- function(tau){
+  2*pi^6/945 * E6(tau)
+}
+
+halfPeriods <- function(g) {
   g2 <- g[1L]
-  g2cube <- g2*g2*g2
   g3 <- g[2L]
-  j <- 1728 * g2cube / (g2cube - 27*g3*g3)
-  if(is.infinite(j)){
-    return(c(-1i*pi/2/sqrt(3), complex(real = Inf, imaginary = Inf)))
-  } 
-  tau <- kleinjinv(j) 
-  omega1 <- 1i * sqrt(sqrt(15 / 4 / g2 * G4(tau)))
+  if(g2 == 0) {
+    omega1 <- gamma(1/3)^3 / 4 / pi / g3^(1/6)
+    tau <- complex(real = 0.5, imaginary = sqrt(3)/2)
+  } else {
+    g2cube <- g2*g2*g2
+    j <- 1728 * g2cube / (g2cube - 27*g3*g3)
+    if(is.infinite(j)){
+      return(c(-1i*pi/2/sqrt(3), complex(real = Inf, imaginary = Inf)))
+    } 
+    tau <- kleinjinv(j) 
+    if(g3 == 0) {
+      omega1 <- 1i * sqrt(sqrt(15 / 4 / g2 * G4(tau))) 
+    } else {
+      omega1 <- sqrt(as.complex(7 * G6(tau) * g2 / (12 * G4(tau) * g3)))
+    }
+  }
   c(omega1, tau)
 }
 
