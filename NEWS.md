@@ -1,3 +1,10 @@
+# jacobi 2.3.0
+
+- Lemniscate elliptic functions.
+
+- Dixon elliptic functions.
+
+
 # jacobi 2.2.0
 
 - Some values of the Jacobi theta functions were wrong as of version 2.1.0.
