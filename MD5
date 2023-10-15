@@ -1,9 +1,9 @@
-44df2232384f5facfc6be82d1126bc38 *DESCRIPTION
+3e0f63368707071693a34620b18e3c17 *DESCRIPTION
 e9bf3b4af0ea02b55677da46aa169609 *NAMESPACE
-971e2045d54da1997f50d98caca1f389 *NEWS.md
+1b971982eb009801251f14ccc81cf3e9 *NEWS.md
 d19d9af603a59a89a79a8adba671d47d *R/CostaMesh.R
 1a6060887d0a05d1ae76cda7067a6c32 *R/Dixon.R
-3956dadd1713a9763ad94469a07fc3ad *R/RcppExports.R
+1703595f4ff0c51394089eba3b63837e *R/RcppExports.R
 d54c348d5154dcf0a8d8f1f021f24f4f *R/aaa.R
 d6f2213616a648e4d8cfd55fd07f103c *R/agm.R
 cc50c380fadb60a0644f49fccef9cf9d *R/am.R
@@ -13,7 +13,7 @@ a40144b6e89773f182f7d0f318292119 *R/internal.R
 2db036d154ec778b0eb06b70291a2c67 *R/jellip.R
 cf68f8d73f8de4be902c85085ef0e7e3 *R/jtheta.R
 3b82a23cc4c44aedf6700227c5c60756 *R/jtheta1derivatives.R
-0a369b5127c0a597aac21920899f20cc *R/klein-j.R
+bfc41e15cef4c1c106537c2a1e821473 *R/klein-j.R
 7b433dff6072ea2cd6d35ce8574c56ab *R/lambda.R
 678cfb87a8fc232f851a4c3107095f10 *R/lemniscate.R
 0afa8de0adcb70f7429a614cd3cd5e29 *R/theta-neville.R
@@ -22,8 +22,7 @@ f99dfde9e67b56cf0713fab5c0203ab5 *R/wp.R
 7a03527e96bf5064e740d922afc29be8 *R/wpinv.R
 602fcf425cd902be5811ed527613770d *R/wsigma.R
 c10647596f28b2807b200283ecd25e41 *R/wzeta.R
-c5c0c60b8f0704cc403ab93126d91dcb *README.md
-f28a87679dcaab030d9b73622c81861b *inst/docs/77035008.pdf
+7a9a8362dd3aa5119fe35304eecdb8ca *README.md
 cba123a4590c2601549df635d544e4d6 *man/CostaMesh.Rd
 f96d19d3a6665ce7b3b756079df91cf5 *man/Dixon.Rd
 92f5b234c5bb66e89c448f11c5635f9b *man/EisensteinE.Rd
@@ -45,10 +44,9 @@ e27744d5880a1c4b8063e698c3cd9826 *man/wp.Rd
 91ebc5fb745399fc2f3a26a644db7319 *man/wpinv.Rd
 a1c68f7ae44caab0696370ade3cb4c7c *man/wsigma.Rd
 e4f2d896f4435fd8e55333a70544cadf *man/wzeta.Rd
-9bd171b2c375b6294d90d6b06e12c2a9 *src/RcppExports.cpp
-a3b28bcea4589aa98f41919b21cb8112 *src/altjtheta.cpp
-7988656262af8029750ff7fe88784244 *src/jacobi.cpp
-a775d2a9a63a91d74e68e5067a658e6f *src/jacobi_types.h
+da9e661ff09785250a3c3559fdaafe18 *src/RcppExports.cpp
+9728084a9b07834e24a4e7b131b9c686 *src/jacobi.cpp
+9c168878bb09511288172cc9f62d2f3a *src/jacobi_types.h
 0822f935b9ba528261c37fafd4bbad3e *tests/testthat.R
 ede9764873c841e90521f89039bd170d *tests/testthat/test-Dixon.R
 35d5005f1c669a90cda2ef58441a39b3 *tests/testthat/test-agm.R

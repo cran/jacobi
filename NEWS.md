@@ -1,3 +1,12 @@
+# jacobi 3.0.0
+
+- Changed the expression of the `kleinj` function in order that its factors 
+avoid a possible float overflow. 
+
+- Major changes in the implementation of the Jacobi theta functions, following 
+the new Fortran implementation by Mikael Fremling.
+
+
 # jacobi 2.3.1
 
 - More unit tests.
