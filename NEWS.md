@@ -1,3 +1,22 @@
+# jacobi 3.1.0
+
+- Elliptic alpha function.
+
+- Rogers-Ramanujan functions.
+
+- Jacobi theta function with characteristics.
+
+- Allows a negative nome.
+
+- Some conformal mappings.
+
+- Nome in function of the parameter.
+
+- The logarithms of the Jacobi theta functions were not in the principal branch.
+
+- The Dedekind eta function is now vectorized.
+
+
 # jacobi 3.0.0
 
 - Changed the expression of the `kleinj` function in order that its factors 

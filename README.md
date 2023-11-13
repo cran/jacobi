@@ -36,8 +36,25 @@ Jacobi theta functions and related functions.
 
 ![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/wp_Sobel.gif)
 
+![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/RogersRamanujanAlternating_pow5.png)
+
+![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/RogersRamanujanMobius.gif)
+
+![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/wpprime_equianharmonic.png)
+
+![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/lambda_Cayley.gif)
+
+![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/lambdaOnSquare.gif)
+
+![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/kleinOnSquare.gif)
+
+![](https://raw.githubusercontent.com/stla/jacobi/main/inst/images/etaDedekindOnCircle.png)
+
+
 ### Blog posts
 
 - [Beautiful complex functions](https://laustep.github.io/stlahblog/posts/beautifulComplexFunctions.html)
 
 - [On a Möbius transformation](https://laustep.github.io/stlahblog/posts/OnAMobiusTransformation.html)
+
+- [The pretty Klein j-invariant function](https://laustep.github.io/stlahblog/posts/KleinJinvariant.html)

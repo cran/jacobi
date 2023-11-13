@@ -1,11 +1,12 @@
 jtheta1prime0 <- function(tau = NULL, q = NULL){
   tau <- check_and_get_tau(tau, q)
-  return(theta1dash(0, tau))
+  #return(theta1dash(0, tau))
   #jtheta2_cpp(0, tau) * jtheta3_cpp(0, tau) * jtheta4_cpp(0, tau)
+  -2i * jtheta_ab(1/6, 1/2, 0, 3*tau)^3
 }
 
 jtheta1primeprimeprime0 <- function(tau){
-  -theta1dash(0, tau) * E2(tau)
+  2i * jtheta_ab(1/6, 1/2, 0, 3*tau)^3 * E2(tau)
 }
 
 dljtheta1 <- function(z, tau){
@@ -28,3 +29,15 @@ dljtheta1 <- function(z, tau){
   # }
   # out
 }
+
+# jtheta4prime0 <- function(tau){
+#   tau <- check_and_get_tau(tau, NULL)
+#   r <- -tau*tau
+#   # 1i * tau = - sqrt(r)
+#   # - tau^2 = r
+#   q <- exp(-pi*sqrt(r))
+#   tau <- check_and_get_tau(NULL, q)
+#   z <- ellipticAlpha(r)
+#   - pi * z * jtheta3_cpp(0, tau)^4 / (4 * sqrt(r) / jtheta4_cpp(0, tau))
+# }
+# Wolfram: it's derivative with respect to q, not z!
