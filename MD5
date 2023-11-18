@@ -1,6 +1,6 @@
-d67a542570a05cc2d108f39b38092ae2 *DESCRIPTION
+0d705dfdef130c0dda4f7eaaac4f6b8a *DESCRIPTION
 352a9b756e734ac800831f60bd8b0940 *NAMESPACE
-a9f63fc69b73f8ccaa9acc20750cbb4f *NEWS.md
+39fd31af11e499a02b42087a5ad20932 *NEWS.md
 d19d9af603a59a89a79a8adba671d47d *R/CostaMesh.R
 1a6060887d0a05d1ae76cda7067a6c32 *R/Dixon.R
 5ccbf3a42958cb2fa29ffc771c885c73 *R/RcppExports.R
@@ -62,7 +62,7 @@ e4f2d896f4435fd8e55333a70544cadf *man/wzeta.Rd
 9c168878bb09511288172cc9f62d2f3a *src/jacobi_types.h
 0822f935b9ba528261c37fafd4bbad3e *tests/testthat.R
 ede9764873c841e90521f89039bd170d *tests/testthat/test-Dixon.R
-7cb865cd52635645611f909335506297 *tests/testthat/test-RogersRamanujan.R
+7804c478d9ef5902904ec5d2b945854f *tests/testthat/test-RogersRamanujan.R
 35d5005f1c669a90cda2ef58441a39b3 *tests/testthat/test-agm.R
 a67271199b8c2a98d66eb8ae5884ee7a *tests/testthat/test-am.R
 c7d5eac2370a5c8d57291ea046fa03ce *tests/testthat/test-eisenstein.R

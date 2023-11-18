@@ -1,7 +1,7 @@
 Type: Package
 Package: jacobi
 Title: Jacobi Theta Functions and Related Functions
-Version: 3.1.0
+Version: 3.1.1
 Authors@R: c(
     person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre")),
     person("Mikael", "Fremling", role = "aut",
@@ -24,10 +24,10 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 NeedsCompilation: yes
-Packaged: 2023-11-13 08:33:46 UTC; SDL96354
+Packaged: 2023-11-16 14:13:45 UTC; SDL96354
 Author: Stéphane Laurent [aut, cre],
   Mikael Fremling [aut] (author of the original Fortran code for the
     theta functions)
 Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
 Repository: CRAN
-Date/Publication: 2023-11-13 11:33:20 UTC
+Date/Publication: 2023-11-18 23:50:03 UTC
